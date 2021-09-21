@@ -1,5 +1,11 @@
 # ImageUriToBlob
 
+This allows you to use uri-to-blob conversion in the Flow rather than during doc processing.
+
+## Why?
+
+- Instead of processing input and query images separately, use one Executor to do them both.
+- Saves you having to write a `for` loop to convert every image (since many encoders expect `blob`s).
 
 ## Usage
 
